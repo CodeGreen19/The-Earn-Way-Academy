@@ -1,0 +1,6 @@
+.account_container li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+}

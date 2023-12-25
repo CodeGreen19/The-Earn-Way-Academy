@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .ls_1 {
+    @apply tracking-[1px];
+  }
+  .b_1 {
+    @apply border-[1px] border-[#71717139];
+  }
+  .b_1w {
+    @apply border-[1px] border-[#d3d3d339];
+  }
+  .b_1x {
+    @apply border-[1px] border-[#717171a0];
+  }
+  .bt_1 {
+    @apply border-t-[1px] border-t-[#0000005c];
+  }
+  .bt_t {
+    @apply border-t-transparent;
+  }
+  .bt_2 {
+    @apply border-t-[2px] border-t-[#0000005c];
+  }
+  .bb_1 {
+    @apply border-b-[1px] border-b-[#00000028];
+  }
+  .bb_t {
+    @apply border-b-transparent;
+  }
+  .bl_1 {
+    @apply border-l-[1px] border-l-[#1e1e1e28];
+  }
+  .modal_container {
+    @apply fixed left-0 top-0 z-[80] flex items-center justify-center overflow-hidden;
+  }
+  .modal_box {
+    @apply relative flex w-full flex-col items-center justify-center bg-white p-4 pb-8 sm:w-[500px];
+  }
+  .modal_btn {
+    @apply absolute right-2 top-[-10px] border-[1px] border-black bg-white sm:right-[-10px];
+  }
+  .signature_btn {
+    @apply my-1 rounded bg-[green] px-3 py-2 text-[white];
+  }
+}

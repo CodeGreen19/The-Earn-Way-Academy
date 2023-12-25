@@ -1,0 +1,63 @@
+.nav_skill_tems li {
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+}
+.nav_skill_tems li:hover {
+  color: blue;
+}
+/* footer  */
+.social_icons svg {
+  font-size: 1.9rem;
+}
+
+/*  heading  */
+.tewa_heading {
+  font-family: "potta one", sans-serif;
+  padding: 20px 0;
+  font-size: 3vmax;
+  color: white;
+  transition: all 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hero_container.add .tewa_heading {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hero_boxes {
+  display: flex;
+  gap: 20px !important;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.hero_boxes > div {
+  width: 22%;
+  aspect-ratio: 4/3.5;
+  background-color: rgba(240, 248, 255, 0.06);
+  flex: none;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.636);
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hero_container.add .hero_boxes > div {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_boxes {
+    display: flex;
+    gap: 10px !important;
+    margin-top: 20px;
+  }
+  .hero_boxes > div {
+    width: 97%;
+    height: 110px;
+    border-radius: 5px;
+  }
+}

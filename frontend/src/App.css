@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad&family=Beau+Rivage&family=Philosopher&family=Potta+One&family=Quicksand&family=Roboto:ital,wght@1,100&family=Tajawal&display=swap");
+* {
+  font-family: "Tajawal", sans-serif;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main_logo {
+  filter: drop-shadow(0.4px 0.4px 0.4px black);
+}
+
+.bottom_navbar li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
+.confirm_otp_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.confirm_otp_inputs input {
+  /* border: 1px solid gray; */
+  height: 63px;
+  width: 67px;
+  background-color: white;
+  border-bottom: 1px solid rgb(48, 48, 48);
+  text-align: center;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 1px rgb(46, 46, 46);
+}
+.confirm_otp_inputs .activate {
+  border: 2px solid rgb(74, 74, 74);
+  box-shadow: 0px 0px 0px gray;
+}
+
+.extra_user_info input,
+.login_pass_box {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border: 1px solid rgb(177, 177, 177);
+  width: 100%;
+  border-radius: 3px;
+  font-family: "Tajawal", sans-serif;
+  position: relative;
+}
+.extra_user_info div {
+  position: relative;
+}
+
+.extra_user_info input,
+.login_pass_box input {
+  outline: none;
+}
+.extra_user_info img,
+.login_pass_box img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* for loading css  */
+@keyframes custom-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.testimonial_text {
+  font-family: "Tajawal", sans-serif !important;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.testmonianls_box h2 {
+  font-family: "Tajawal", sans-serif !important;
+}
+/* Define your custom animation duration here */
+.animate-custom-spin {
+  animation: custom-spin 0.5s linear infinite; /* Adjust the animation duration here */
+}
+
+/* payment com  */
+.order_summery_ul {
+  padding: 20px;
+}
+.order_summery_ul li {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+/* nav options  */
+
+.nav_profile_items li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.nav_profile_items li svg {
+  font-size: 1.1rem;
+}
+
+.change_pass_box {
+  width: 400px;
+}
+.change_pass_box li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0;
+}
+.change_pass_box img {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+.change_pass_box input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 50px;
+}

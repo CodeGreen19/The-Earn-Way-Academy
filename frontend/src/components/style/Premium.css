@@ -1,0 +1,79 @@
+/* for quiz container  */
+.modal_container {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  transition:
+    background-color 0.3s ease-in-out,
+    height 0s 0.3s ease-in-out;
+  /* padding: 0.4rem; */
+}
+.modal_container.add {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.64);
+  transition: background-color 0.3s ease-in-out;
+  z-index: 60;
+}
+.modal_container > .modal_box {
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.modal_container.add > .modal_box {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.modal_btn > svg {
+  font-size: 1.8rem;
+}
+.quiz_number_list::-webkit-scrollbar {
+  border-radius: 20px;
+  background: rgb(229, 229, 229);
+  height: 8px;
+}
+.quiz_number_list::-webkit-scrollbar-thumb {
+  background: rgb(169, 169, 169);
+  border-radius: 8px;
+}
+/* for quiz container ....  */
+
+.quiz_options_box .react-multi-carousel-list {
+  padding-top: 0 !important;
+  padding-bottom: 40px !important;
+}
+.quiz_options_box .react-multi-carousel-dot-list {
+  width: 100%;
+  overflow-x: scroll;
+  justify-content: flex-start !important;
+}
+
+.react-multi-carousel-dot-list::-webkit-scrollbar {
+  border-radius: 20px;
+  background: rgb(241, 241, 241);
+  height: 8px;
+}
+.react-multi-carousel-dot-list::-webkit-scrollbar-thumb {
+  background: rgb(184, 184, 184);
+  border-radius: 8px;
+}
+
+.quiz_options_box .react-multiple-carousel__arrow--right {
+  transform: translateX(20px);
+}
+.quiz_options_box .react-multiple-carousel__arrow--left {
+  transform: translateX(-20px);
+}
+.quiz_options_box .react-multiple-carousel__arrow--right::before {
+  color: green !important;
+}
+.quiz_options_box .react-multiple-carousel__arrow--left::before {
+  color: green !important;
+}
+.quiz_options_box .react-multiple-carousel__arrow--right:hover {
+  background: #ffffff;
+}
+.quiz_options_box .react-multiple-carousel__arrow--left:hover {
+  background: #ffffff;
+}
