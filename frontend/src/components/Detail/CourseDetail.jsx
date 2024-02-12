@@ -5,6 +5,7 @@ import listBook from "../../assets/svg/list_book.svg";
 import circle_list from "../../assets/svg/success.svg";
 import Headline from "../helper/Headline";
 import { useNavigate } from "react-router-dom";
+import tew from "../../assets/image/tew.jpg";
 
 function CourseDetail() {
   const navigate = useNavigate();
@@ -85,7 +86,8 @@ function CourseDetail() {
           </ul>
           <img
             className="b_1 m-1 w-full rounded"
-            src="	https://cdn.10minuteschool.com/communication-masterclass-by-tahsan-khan-certificate.png"
+            // src="	https://cdn.10minuteschool.com/communication-masterclass-by-tahsan-khan-certificate.png"
+            src={tew}
             alt="cirtificate "
           />
         </div>

@@ -21,3 +21,15 @@ exports.deleteCourses = tryCatchHandler(async (req, res) => {
     .status(201)
     .json({ success: false, message: "Course Deleted Successfully" });
 });
+
+// search typing in the input fields
+exports.searchCourse = tryCatchHandler(async (req, res) => {
+  const { query } = req.query;
+  const courses = await Course.find({
+    $or: [
+      { title: { $regex: new RegExp(query, "i") } },
+      { "courseInfo.instructor.name": { $regex: new RegExp(query, "i") } },
+    ],
+  });
+  res.status(201).json({ success: true, courses });
+});

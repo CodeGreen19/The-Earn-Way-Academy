@@ -3,7 +3,7 @@ import HamIcon from "../../assets/svg/ham.svg";
 import main_logo from "../../assets/logo/main_logo2.png";
 import login_profile from "../../assets/logo/login_profile.svg";
 import Phone from "../../assets/svg/call.svg";
-import Search from "../../assets/svg/search2.svg";
+import Search from "../../assets/svg/search3.svg";
 import { useNavigate } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import VpnKeyIcon from "@mui/icons-material/VpnKey";
@@ -27,6 +27,10 @@ function MobileNav() {
       navigate("/");
     });
   };
+
+  const handleSearch = () => {
+    navigate("/course/search");
+  };
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (boxRef.current && !boxRef.current.contains(event.target)) {
@@ -49,7 +53,10 @@ function MobileNav() {
           alt="mainLogo"
           onClick={() => navigate("/")}
         />
-        <div className=" relative ml-3 hidden h-[60%]  w-[300px] md:block ">
+        <div
+          className=" relative ml-3 hidden h-[60%]  w-[300px] md:block "
+          onClick={handleSearch}
+        >
           <input
             type="text"
             className="b_1 h-full w-full rounded-[50px] border-[#cbcbcb] p-3   pl-[40px] outline-none  "
@@ -69,7 +76,12 @@ function MobileNav() {
           <li>Basic Computer</li>
           <li>Quran</li>
         </ul>
-        <img className="h-[30px] md:hidden" src={Search} alt="search_icon" />
+        <img
+          className="h-[30px] md:hidden"
+          src={Search}
+          alt="search_icon"
+          onClick={handleSearch}
+        />
         <div className="flex gap-2">
           <img className="h-[25px]" src={Phone} alt="ham_icon" />
           <h2 className="hidden text-[blue] lg:block">01870-425052</h2>

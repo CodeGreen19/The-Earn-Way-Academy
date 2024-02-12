@@ -25,6 +25,7 @@ import Quiz from "./components/dashboard/Quiz";
 import Dashboard from "./components/dashboard/Dashboard";
 import CreateCourse from "./components/dashboard/CreateCourse";
 import AllCourses from "./components/Detail/AllCourses";
+import SearchResults from "./components/search/SearchResults";
 
 const toastOptions = {
   style: {
@@ -77,6 +78,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/create/course" element={<CreateCourse />} />
             <Route path="/course/all" element={<AllCourses />} />
+            <Route path="/course/search" element={<SearchResults />} />
           </Routes>
           <Footer />
           <BottomNavbar />
